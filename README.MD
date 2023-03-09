@@ -19,7 +19,7 @@ Para instalar el proyecto, clona el repositorio y ejecuta uno de los siguientes 
   yarn install
 ```
 
-**O**
+    **O**
 
 ```
   npm install
@@ -61,17 +61,13 @@ Agradecimientos y créditos a **Fernando Herrera** por su colaboración en el de
 
 Si desea contribuir al proyecto, siga estos pasos:
 
-**1.**  
- Realice un fork del repositorio
+**1.** Realice un fork del repositorio
 
-**2.**  
- Crea una rama para tu contribución
+**2.** Crea una rama para tu contribución
 
-**3.**  
- Realiza los cambios necesarios y asegúrate de que todas las pruebas pasen.
+**3.** Realiza los cambios necesarios y asegúrate de que todas las pruebas pasen.
 
-**4.**  
- Envía una solicitud de extracción con tus cambios.
+**4.** Envía una solicitud de extracción con tus cambios.
 
 ## Cómo reportar problemas
 
