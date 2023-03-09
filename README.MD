@@ -15,11 +15,13 @@ AppMovie es una aplicación móvil que te permite encontrar películas y obtener
 
 Para instalar el proyecto, clona el repositorio y ejecuta uno de los siguientes comandos:
 
+Abra una Terminal en la raíz del proyecto y ejecute:
+
 ```
   yarn install
 ```
 
-    **O**
+O si usa npm:
 
 ```
   npm install
