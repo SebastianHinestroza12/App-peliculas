@@ -13,24 +13,37 @@ AppMovie es una aplicación móvil que te permite encontrar películas y obtener
 
 ## Instalación
 
-Para instalar el proyecto, clona el repositorio y ejecuta uno de los siguientes comandos: **yarn install** o **npm install**
+Para instalar el proyecto, clona el repositorio y ejecuta uno de los siguientes comandos:
+
+```
+  yarn install o npm install
+```
 
 ## Configuración
 
 Para poder utilizar la API de The Movie Database, necesitas obtener una API key. Sigue los siguientes pasos para obtener tu propia API key:
 
-**1.** Crea una cuenta en [The Movie Database](https://www.themoviedb.org/signup)
-**2.** Después de crear tu cuenta, ve a la página de configuración de API y haz clic en "Solicitar un API key".
-**3.** Completa el formulario y sigue las instrucciones para obtener tu API key.
-**4.** Una vez que hayas obtenido tu API key, crea un archivo .env en la raíz del proyecto.
-**5.** En el archivo .env, agrega la siguiente línea: REACT_APP_API_KEY=TU_API_KEY, donde TU_API_KEY es la API key que acabas de obtener.
-**6.** Recuerda que la API key es sensible a mayúsculas y minúsculas, así que asegúrate de escribirla correctamente en el archivo .env.
+1.  Crea una cuenta en [The Movie Database](https://www.themoviedb.org/signup)
+
+2.  Después de crear tu cuenta, ve a la página de configuración de API y haz clic en "Solicitar un API key".
+
+3.  Completa el formulario y sigue las instrucciones para obtener tu API key.
+
+4.  Una vez que hayas obtenido tu API key, crea un archivo .env en la raíz del proyecto.
+
+5.  En el archivo .env, agrega la siguiente línea: REACT_APP_API_KEY=TU_API_KEY, donde TU_API_KEY es la API key que acabas de obtener.
+
+6.  Recuerda que la API key es sensible a mayúsculas y minúsculas, así que asegúrate de escribirla correctamente en el archivo .env.
 
 **Con estas instrucciones, podrás obtener tu propia API key de The Movie Database y configurarla en tu proyecto. Esto te permitirá realizar llamados a la API y obtener información sobre películas para tu aplicación.**
 
 ## Uso
 
-Para correr el proyecto, ejecuta el siguiente comando: **npm run android**
+Para correr el proyecto, ejecuta el siguiente comando:
+
+```
+  npm run android
+```
 
 **Tenga en cuenta de debe tener un emulador en Android Studio o la configuración necesaria para ejecutar la aplicacion en su dispositivo movil.**
 
