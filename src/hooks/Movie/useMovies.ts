@@ -1,6 +1,8 @@
-import {useEffect, useState} from 'react';
+import {useContext, useEffect, useState} from 'react';
 import {movieDb} from '../../api/MovieDb';
 import {MovieDB, Movies} from '../../interfaces';
+import {getImageColors} from '../../helper/getColor';
+import {GradientContext} from '../../context/GradientContext';
 
 interface MoviesState {
   nowPlaying: Movies[];
@@ -10,6 +12,7 @@ interface MoviesState {
 }
 
 export const useMovies = () => {
+  const {setMainColors} = useContext(GradientContext);
   const [isLoading, setIsLoading] = useState(true);
   const [moviesState, setMoviesState] = useState<MoviesState>({
     nowPlaying: [],
@@ -43,6 +46,14 @@ export const useMovies = () => {
     setIsLoading(false);
   };
 
+  const getPosterColors = async (index: number) => {
+    const movie = moviesState.nowPlaying[index];
+    const uri = `https://image.tmdb.org/t/p/w500/${movie?.poster_path}`;
+    const [primary = 'green', secondary = 'black', tertiary = 'white'] =
+      await getImageColors(uri);
+    setMainColors({primary, secondary, tertiary});
+  };
+
   useEffect(() => {
     getMoviesRequest();
   }, []);
@@ -50,5 +61,6 @@ export const useMovies = () => {
   return {
     ...moviesState,
     isLoading,
+    getPosterColors,
   };
 };

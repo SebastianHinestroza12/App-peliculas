@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Image, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, Image, StyleSheet, TouchableOpacity, Text} from 'react-native';
 import {Movies} from '../../interfaces/index';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
 
@@ -16,25 +16,27 @@ export const PosterMovies = ({movie, height = 400, width = 300}: Props) => {
   const navigation: NavigationProp<ReactNavigation.RootParamList> =
     useNavigation();
   return (
-    <TouchableOpacity
-      activeOpacity={0.8}
-      style={{
-        width,
-        height,
-        marginHorizontal: 2,
-        paddingBottom: 20,
-        paddingHorizontal: 5,
-      }}
-      onPress={() => navigation.navigate('DetailsScreen', movie)}>
-      <View style={styles.imageContainer}>
-        <Image
-          source={{
-            uri,
-          }}
-          style={styles.image}
-        />
-      </View>
-    </TouchableOpacity>
+    <View>
+      <TouchableOpacity
+        activeOpacity={0.8}
+        style={{
+          width,
+          height,
+          marginHorizontal: 2,
+          paddingBottom: 20,
+          paddingHorizontal: 5,
+        }}
+        onPress={() => navigation.navigate('DetailsScreen', movie)}>
+        <View style={styles.imageContainer}>
+          <Image
+            source={{
+              uri,
+            }}
+            style={styles.image}
+          />
+        </View>
+      </TouchableOpacity>
+    </View>
   );
 };
 

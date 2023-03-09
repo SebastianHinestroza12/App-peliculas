@@ -19,7 +19,7 @@ export const CardMovies = ({title, state}: PropsCard) => {
             marginBottom: 12,
             fontSize: 20,
             textTransform: 'uppercase',
-            color: '#000',
+            color: '#fff',
             fontWeight: 'bold',
           }}>
           {title}
