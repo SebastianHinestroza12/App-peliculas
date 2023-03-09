@@ -16,24 +16,30 @@ AppMovie es una aplicación móvil que te permite encontrar películas y obtener
 Para instalar el proyecto, clona el repositorio y ejecuta uno de los siguientes comandos:
 
 ```
-  yarn install o npm install
+  yarn install
+```
+
+**O**
+
+```
+  npm install
 ```
 
 ## Configuración
 
 Para poder utilizar la API de The Movie Database, necesitas obtener una API key. Sigue los siguientes pasos para obtener tu propia API key:
 
-1.  Crea una cuenta en [The Movie Database](https://www.themoviedb.org/signup)
+**1.** Crea una cuenta en [The Movie Database](https://www.themoviedb.org/signup)
 
-2.  Después de crear tu cuenta, ve a la página de configuración de API y haz clic en "Solicitar un API key".
+**2.** Después de crear tu cuenta, ve a la página de configuración de API y haz clic en "Solicitar un API key".
 
-3.  Completa el formulario y sigue las instrucciones para obtener tu API key.
+**3.** Completa el formulario y sigue las instrucciones para obtener tu API key.
 
-4.  Una vez que hayas obtenido tu API key, crea un archivo .env en la raíz del proyecto.
+**4.** Una vez que hayas obtenido tu API key, crea un archivo .env en la raíz del proyecto.
 
-5.  En el archivo .env, agrega la siguiente línea: REACT_APP_API_KEY=TU_API_KEY, donde TU_API_KEY es la API key que acabas de obtener.
+**5.** En el archivo .env, agrega la siguiente línea: REACT_APP_API_KEY=TU_API_KEY, donde TU_API_KEY es la API key que acabas de obtener.
 
-6.  Recuerda que la API key es sensible a mayúsculas y minúsculas, así que asegúrate de escribirla correctamente en el archivo .env.
+**6.** Recuerda que la API key es sensible a mayúsculas y minúsculas, así que asegúrate de escribirla correctamente en el archivo .env.
 
 **Con estas instrucciones, podrás obtener tu propia API key de The Movie Database y configurarla en tu proyecto. Esto te permitirá realizar llamados a la API y obtener información sobre películas para tu aplicación.**
 
@@ -55,10 +61,17 @@ Agradecimientos y créditos a **Fernando Herrera** por su colaboración en el de
 
 Si desea contribuir al proyecto, siga estos pasos:
 
-**1.** Realice un fork del repositorio
-**2.** Crea una rama para tu contribución
-**3.** Realiza los cambios necesarios y asegúrate de que todas las pruebas pasen.
-**4.** Envía una solicitud de extracción con tus cambios.
+**1.**  
+ Realice un fork del repositorio
+
+**2.**  
+ Crea una rama para tu contribución
+
+**3.**  
+ Realiza los cambios necesarios y asegúrate de que todas las pruebas pasen.
+
+**4.**  
+ Envía una solicitud de extracción con tus cambios.
 
 ## Cómo reportar problemas
 
